@@ -1,0 +1,24 @@
+configs:
+- id: team77
+  type:
+    settings:
+      schema: builtin:ownership.teams
+      scope: environment
+  config:
+    name: team77
+    template: appteam.json
+    parameters:
+      descr: Team Hicham
+      team_id: team77
+      development: true
+      security: false
+      operations: true
+      infrastructure: false
+      lineOfBusiness: false
+      slackChannel: somewhere
+      slackURL: https://somewhere.slack.com/archives/team77
+      email: makhokh.hicham@imsa.msa.fr
+      addInfoKey: costcode
+      addInfoValue: team77
+      addInfoUrl: https://example.com/team77
+    skip: false
