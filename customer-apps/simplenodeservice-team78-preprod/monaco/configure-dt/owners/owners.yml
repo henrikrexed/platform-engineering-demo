@@ -1,0 +1,24 @@
+configs:
+- id: team78
+  type:
+    settings:
+      schema: builtin:ownership.teams
+      scope: environment
+  config:
+    name: team78
+    template: appteam.json
+    parameters:
+      descr: Team 78
+      team_id: team78
+      development: true
+      security: false
+      operations: true
+      infrastructure: false
+      lineOfBusiness: false
+      slackChannel: somewhere
+      slackURL: https://somewhere.slack.com/archives/team78
+      email: team78@example.com
+      addInfoKey: costcode
+      addInfoValue: team78
+      addInfoUrl: https://example.com/team78
+    skip: false

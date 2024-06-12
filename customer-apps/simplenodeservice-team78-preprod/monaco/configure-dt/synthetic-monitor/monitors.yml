@@ -1,0 +1,14 @@
+configs:
+- id: simplenodeservice-team78-preprod_synthetic
+  config:
+    name: "Healthcheck simplenodeservice-team78-preprod"
+    parameters:
+      baseUrl: "https://shiny-space-memory-rx5rv7v6q7w3p59w-80.app.github.dev/simplenodeservice-team78-preprod"
+      frequencyMin: "1"
+      enabled: "true"
+      geoLocation: "GEOLOCATION-3F7C50D0C9065578"
+      teamIdentifier: "team78"
+    template: health-check-http.json
+    skip: false
+  type:
+    api: synthetic-monitor
