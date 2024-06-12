@@ -1,0 +1,47 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "simplenodeservice-team78-preprod"
+  title: "simplenodeservice-team78-preprod"
+  description: "Template for the simplenodeservice owned and operated by team78 in environment preprod"
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    # Not working
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/name=userinterface'
+    'backstage.io/kubernetes-namespace': 'simplenodeservice-team78-preprod'
+    argocd/app-name: simplenodeservice-team78-preprod
+  links:
+    - url: https://github.com/henrikrexed/platform-engineering-demo.git
+      title: Github Repo
+      icon: github
+    - url: https://shiny-space-memory-rx5rv7v6q7w3p59w-80.app.github.dev/simplenodeservice-team78-preprod
+      title: "Browse Application"
+      icon: subject
+    - title: View in ArgoCD
+      icon: catalog
+      url: https://shiny-space-memory-rx5rv7v6q7w3p59w-30100.app.github.dev/applications/argocd/simplenodeservice-team78-preprod
+    - title: View in Dynatrace
+      icon: catalog
+      url: https://dsf57140.sprint.apps.dynatracelabs.com
+    - url: https://community.dynatrace.com
+      title: Dynatrace community
+      icon: dashboard
+spec:
+  type: website
+  owner: team78
+  lifecycle: preprod
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team78
+  description: Group for application team team78
+spec:
+  type: business-unit
+  profile:
+    displayName: Team 78
+    email: team78@example.com
+    picture: https://example.com/staff/jenny-with-party-hat.jpeg
+  parent: applications
+  children: []
+#   members: [jdoe]
